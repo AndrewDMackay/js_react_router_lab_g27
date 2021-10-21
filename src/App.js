@@ -9,7 +9,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const App = ()=> {
   
   return (
-
+    <Router>
+      <>
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/pricing" compoent={Pricing}/>
+      </>
+    </Router>
   )
 
 }
